@@ -11,7 +11,7 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <title>Modern JS From The Beginning</title>
+    <title>Number Guesser</title>
   </head>
   <body>
     <nav>
@@ -25,22 +25,33 @@
     </nav>
     <div class="container">
       <div class="row">
-        <div class="col s12 center-align">
-          <h1>Modern JavaScript From The Beginning</h1>
-          <h3>Project Index</h3>
-          <div class="row">
-            <div class="col s6 offset-s3">
-              <h5>DOM Manipulation and Events:</h5>
-              <div class="collection">
-                <a href="./tasklist/index.html" class="collection-item"
-                  >Task List App</a
-                >
-                <a href="./loancalculator/index.html" class="collection-item"
-                  >Loan Calculator App</a
-                >
-                <a href="./numberguesser/index.html" class="collection-item"
-                  >Number Guesser App</a
-                >
+        <div class="col s12">
+          <h2 class="center-align">Number Guesser</h2>
+        </div>
+      </div>
+      <div id="game">
+        <div class="row">
+          <div class="col s6 offset-s3">
+            <p class="center-align">
+              Guess a number between <span class="min-num"></span> and
+              <span class="max-num"></span>
+            </p>
+
+            <div class="row">
+              <div class="col s7 offset-s2">
+                <input type="number" id="guess-input" />
+                <label for="guess-input">Enter your guess.</label>
+              </div>
+              <div class="col s3">
+                <input
+                  type="submit"
+                  value="Submit"
+                  class="btn black"
+                  id="guess-btn"
+                />
+              </div>
+              <div class="col s12">
+                <p class="message center-align"></p>
               </div>
             </div>
           </div>
@@ -49,6 +60,6 @@
     </div>
     <!-- Materialize JavaScript CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="app.js"></script>
+    <script src="numberapp.js"></script>
   </body>
 </html>
