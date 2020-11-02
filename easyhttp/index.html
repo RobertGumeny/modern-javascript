@@ -32,41 +32,32 @@
     <div class="container">
       <div class="row">
         <div class="col s12 center-align">
-          <h2>Modern JavaScript From The Beginning</h2>
-          <h3>Project Index</h3>
-          <div class="row">
-            <div class="col s6 offset-s3">
-              <h5>DOM Manipulation and Events:</h5>
-              <div class="collection">
-                <a href="./tasklist/index.html" class="collection-item"
-                  >Task List App</a
-                >
-                <a href="./loancalculator/index.html" class="collection-item"
-                  >Loan Calculator App</a
-                >
-                <a href="./numberguesser/index.html" class="collection-item"
-                  >Number Guesser App</a
-                >
-              </div>
-              <h5>Object Oriented JavaScript</h5>
-              <div class="collection">
-                <a href="./booklist/index.html" class="collection-item"
-                  >Book List App</a
-                >
-              </div>
-              <h5>AJAX, Fetch API, and HTTP Requests</h5>
-              <div class="collection">
-                <a href="./easyhttp/index.html" class="collection-item"
-                  >Easy HTTP</a
-                >
-              </div>
-            </div>
-          </div>
+          <h2>Easy HTTP</h2>
+          <h5>A simple Custom HTTP Request Library</h5>
+        </div>
+        <div class="col s12 center-align">
+          <h3>Get Requests</h3>
+          <button class="btn black" id="get-all-users">Get All Users</button>
+          <button class="btn black" id="get-one-user">Get One User</button>
+        </div>
+        <div class="col s12 center-align">
+          <h3>Post Request</h3>
+          <button class="btn black" id="create-new-user">
+            Create New User
+          </button>
+        </div>
+        <div class="col s12 center-align">
+          <h3>Put Request</h3>
+          <button class="btn black" id="edit-user">Edit User</button>
+        </div>
+        <div class="col s12 center-align">
+          <h3>Delete Requests</h3>
+          <button class="btn black" id="delete-user">Delete User</button>
         </div>
       </div>
     </div>
-    <!-- Materialize JavaScript CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="easyhttp3.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
